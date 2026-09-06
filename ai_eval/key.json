@@ -1,0 +1,92 @@
+[
+  {
+    "letter": "A",
+    "trace_id": "T7",
+    "label": "invalid: unexplained restoration (cause 5 steps back)",
+    "checker": {
+      "valid": false,
+      "step": 7,
+      "rule": "I3"
+    }
+  },
+  {
+    "letter": "B",
+    "trace_id": "T9",
+    "label": "invalid: panel contradicts the event it follows (immediate)",
+    "checker": {
+      "valid": false,
+      "step": 2,
+      "rule": "P1"
+    }
+  },
+  {
+    "letter": "C",
+    "trace_id": "T4",
+    "label": "valid: observed panels that agree with the events",
+    "checker": {
+      "valid": true,
+      "step": null,
+      "rule": null
+    }
+  },
+  {
+    "letter": "D",
+    "trace_id": "T1",
+    "label": "valid: custody handoff and container opening",
+    "checker": {
+      "valid": true,
+      "step": null,
+      "rule": null
+    }
+  },
+  {
+    "letter": "E",
+    "trace_id": "T2",
+    "label": "valid: legitimate long-distance reversion (break at 2, repair at 8)",
+    "checker": {
+      "valid": true,
+      "step": null,
+      "rule": null
+    }
+  },
+  {
+    "letter": "F",
+    "trace_id": "T8",
+    "label": "invalid: object permanence (immediate)",
+    "checker": {
+      "valid": false,
+      "step": 6,
+      "rule": "I2"
+    }
+  },
+  {
+    "letter": "G",
+    "trace_id": "T6",
+    "label": "invalid: long-distance custody error (cause 5 steps back)",
+    "checker": {
+      "valid": false,
+      "step": 8,
+      "rule": "E-PRE"
+    }
+  },
+  {
+    "letter": "H",
+    "trace_id": "T5",
+    "label": "invalid: short-distance custody error (cause 2 steps back)",
+    "checker": {
+      "valid": false,
+      "step": 3,
+      "rule": "E-PRE"
+    }
+  },
+  {
+    "letter": "I",
+    "trace_id": "T3",
+    "label": "valid: key leaves the chest and changes hands twice",
+    "checker": {
+      "valid": true,
+      "step": null,
+      "rule": null
+    }
+  }
+]

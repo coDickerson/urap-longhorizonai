@@ -1,0 +1,3 @@
+# Transcribe the AI judge's table here, one line per story:
+#   <letter> VALID|INVALID <first violating step or -> <rule or ->
+# Then run:  .venv/bin/python ai_eval/score.py ai_eval/answers_chatgpt.txt

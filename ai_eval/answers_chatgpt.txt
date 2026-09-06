@@ -1,0 +1,12 @@
+# Transcribe the AI judge's table here, one line per story:
+#   <letter> VALID|INVALID <first violating step or -> <rule or ->
+# Then run:  .venv/bin/python ai_eval/score.py ai_eval/answers_chatgpt.txt
+A	INVALID	7	P1	The lantern was broken at step 2 and never repaired, so the panel cannot show it as intact.
+B	INVALID	2	P1	After Marcus takes the key, it is held by Marcus and no longer inside the chest, contradicting the panel.
+C	VALID	-	-	Every action is permitted and each panel accurately reflects the resulting state.
+D	VALID	-	-	The lantern is successfully transferred to Marcus and the key is taken and dropped without contradiction.
+E	VALID	-	-	Marcus holds the broken lantern after step 4 and can explicitly repair it at step 8.
+F	INVALID	6	P1	Dropping the key leaves it on the garden floor, so it cannot be “nowhere to be seen.”
+G	INVALID	8	E-PRE	Marcus already holds the lantern from step 3, so Jake cannot give the lantern to Marcus at step 8.
+H	INVALID	3	E-PRE	Jake is holding the lantern after step 1, so Marcus cannot take it from the hall at step 3.
+I	VALID	-	-	Marcus takes the key, drops it in the hall, and Jake then legitimately takes it before moving to the garden.
